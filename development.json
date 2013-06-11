@@ -1,0 +1,42 @@
+{"items":[
+	{
+		"title": "Front",
+		"text": "Avec plus de 10 ans d'expérience, j'ai su suivre et adopter les dernières tendances et technologies afin de créer des interfaces innovantes : HTML 5, CSS 3 et les derniers frameworks javascript.",
+		"percent":90
+	},
+	{
+		"title": "PHP",
+		"text": "Ayant travaillé sur des dizaines de projets pour de grands comptes, j'ai pu construire une expérience solide sur les principaux framework PHP comme ZendFramework, CakePHP, Symphony ou des CMS comme Wordpress ou Drupal.",
+		"percent":90
+	},
+	{
+		"title": "Java",
+		"text": "Les différents projets sur lesquels j'ai pu collaborer m'ont permis d'étendre mes connaissances autour des derniers framework Java/J2EE comme Struts, Spring, Hibernate, etc...",
+		"percent":80
+	},
+	{
+		"title": "Base de données",
+		"text": "Toutes les applications sur lesquelles j'ai été amené à travailler nécéssitaient le stockage organisé de données. Mes années d'expériences me permettent aujourd'hui d'administrer et utiliser les principaux systèmes de bases de données relationnelles et non relationnelles comme MySQL, Oracle, MongoDB, etc...",
+		"percent":80
+	},
+	{
+		"title": "Mobile",
+		"text": "Sensible à l'ergonomie comme au design, je prend un soin particulier à l'accessibilité des sites internets sur les nouveaux supports comme les tablettes et smartphones. Je possède aussi une certaine expérience dans le développement d'application pour Android.",
+		"percent":80
+	},
+	{
+		"title": "Outillage",
+		"text": "L'industrialisation des développements est aussi un aspect dont je suis familier. Les outils comme Eclipse, Maven, Jenkins, NPM, git, SVN et autre gestionnaires de version sont ceux que j'utilise quotidiennement.",
+		"percent":70
+	},
+	{
+		"title": "Gestion de projet",
+		"text": "Méthodologie, organisation",
+		"percent":60
+	},
+	{
+		"title": "Autre",
+		"text": "Photoshop. NodeJS",
+		"percent":70
+	}
+]}

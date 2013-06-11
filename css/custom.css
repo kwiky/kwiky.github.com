@@ -1,0 +1,213 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:700,500,200);
+@import url(http://fonts.googleapis.com/css?family=Arimo);
+
+body {
+	font-family: 'Arimo', sans-serif;
+	/*padding:80px 0px;*/
+}
+
+.background {
+	z-index:-100;
+	background:url('../img/8995986772_d81c6ac03a_k_30.jpg') center center no-repeat;
+	background-attachment: fixed;
+	/*-webkit-filter: blur(10px);*/
+	position: fixed;
+	width:100%;
+	height:100%;
+}
+
+h1, a, h2 {
+	color:#74b73f;
+}
+
+header a:hover, header a:focus, footer a:hover, footer a:focus, .navbar .nav>li>a {
+	color:#629937;
+	text-decoration:none;
+	padding:inherit;
+}
+
+h1 {
+	text-transform:lowercase;
+	font-size:30px;
+	font-weight:normal;
+	line-height:10px;
+	margin:10px 0px 0px 0px;
+}
+
+header, footer {
+	position: fixed;
+	background:white;
+	-webkit-box-shadow: 0px 0px 10px 0px #333;
+	-moz-box-shadow: 0px 0px 10px 0px #333;
+	box-shadow: 0px 0px 10px 0px #333;
+}
+
+header {
+	padding:10px 10px;
+}
+
+header .nav {
+	margin:0px;
+	display:inline;
+	float:right;
+}
+
+header h1 {
+	float:left;
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+	background-color: transparent;
+}
+
+header li {
+	display:inline;
+	float: left;
+	margin-left:20px;
+	line-height: 30px;
+}
+
+header li.active, header li:hover {
+	border-bottom: 3px solid #74b73f;
+}
+
+header li:hover {
+	border-bottom-color: #629937;
+}
+
+.nav-pills>.active>a, .nav-pills>.active>a:hover, .nav-pills>.active>a:focus {
+	color: #ffffff;
+	background-color: #74b73f;
+}
+
+.content {
+	background-color: rgb(256, 256, 256);
+    background-color: rgba(256, 256, 256, 0.8);
+	padding:80px 10px;
+	color:#000;
+	/*text-shadow: 0px 0px 5px #333;*/
+	-webkit-box-shadow: 0px 0px 10px 0px #888;
+	-moz-box-shadow: 0px 0px 10px 0px #888;
+	box-shadow: 0px 0px 10px 0px #888;
+}
+
+section {
+	margin-bottom:40px;
+}
+
+#about {
+	font-family: 'Raleway', serif;
+	font-weight: 200;
+}
+
+#about .span4 {
+	text-align: center;
+	padding:0px 20px;
+}
+
+#about strong {
+	font-weight:500;
+}
+
+#about .profile-pic {
+	-webkit-box-shadow: 0px 0px 10px 0px #888;
+	-moz-box-shadow: 0px 0px 10px 0px #888;
+	box-shadow: 0px 0px 10px 0px #888;
+}
+
+#development p {
+	text-align: justify;
+}
+
+#development .row-fluid {
+	margin-bottom:20px;
+}
+
+#development .skill {
+	padding:0px 10px 50px 10px;
+	min-height:180px;
+	position: relative; 
+	background-color: rgb(256, 256, 256);
+    background-color: rgba(256, 256, 256, 0.8);	
+}
+
+#development .skill .note {
+	bottom:0;
+	position: absolute; 
+	width:95%;
+}
+
+#development .skill .score {
+	float:left;
+}
+
+#development .skill .progress {
+	float:right; 
+	width:85%;
+}
+
+a.thumbnail:hover, a.thumbnail:focus {
+	border-color: #74b73f;
+}
+
+footer {
+	bottom: 0;
+	left:0;
+	right:0;
+	padding-top:10px;
+}
+
+footer .navbar {
+	margin-bottom: 10px;
+}
+
+footer .nav {
+	margin-bottom: 0px;
+}
+
+footer .nav li {
+	float: left;
+	margin:0px 5px;
+}
+
+@media (max-width: 979px) {
+	.navbar-fixed-top, .navbar-fixed-bottom {
+		position: fixed;
+	}
+}
+
+@media (max-width: 767px) {	
+	header {
+		text-align:center;	
+	}
+	
+	header .nav {
+		margin:0px;
+		display:block;
+		float:none;
+	}
+	
+	.nav-tabs>li, .nav-pills>li {
+		float:none;
+		display:inline;
+	}
+
+	.navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	
+	.navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+		width: auto;
+	}
+	
+	.content {
+		padding-top:180px;
+	}
+	
+	#about img {
+		width:200px;
+		height:200px;
+		margin-bottom:10px;
+	}
+}

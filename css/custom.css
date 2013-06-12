@@ -69,6 +69,10 @@ header li {
 	line-height: 30px;
 }
 
+header li span {
+	margin-left:5px;
+}
+
 header li.active, header li:hover {
 	border-bottom: 3px solid #74b73f;
 }
@@ -195,7 +199,8 @@ footer .nav li {
 	
 	header li {
 		float:none;
-		/*display:inline;*/
+		margin-left:10px;
+		margin-right:10px;
 	}
 	
 	.nav>li>a {
@@ -236,5 +241,16 @@ footer .nav li {
 		-moz-box-shadow: none;
 		box-shadow: none;
 		padding:10px 5px 0px 5px;
+	}
+}
+
+@media (max-width: 380px) {	
+	header li {
+		margin-left:20px;
+		margin-right:20px;
+	}
+	
+	header li span {
+		display:none;
 	}
 }

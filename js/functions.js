@@ -1,3 +1,13 @@
+var photo_matrix = [1, 4, 4, 
+    				1, 1, 1]
+					
+$(document).ready(function() {
+	$(".fancybox").fancybox({
+		openEffect	: 'none',
+		closeEffect	: 'none'
+	});
+});
+
 $('a[href^="#"]').click(function(){  
     var the_id = $(this).attr("href");  
     $('html, body').animate({  
@@ -6,21 +16,34 @@ $('a[href^="#"]').click(function(){
     return false;  
 });
 
-$.fn.photography = function(flickrId, classes) {  
-	var element = $(this);	
-	count = classes.length;
+$.fn.photography = function(flickrId, matrice) {  
+	var element = $(this);
+	var columns = 3;
 	var random = Math.floor((Math.random()*100)+1);
 	$.getJSON('http://api.flickr.com/services/feeds/photos_public.gne?id='+flickrId+'&tags=forwebsite&lang=fr-fr&format=json&jsoncallback=?&random=' + random, function(data){
-		var i = 0;
-		$.each(data.items, function(i, item){
-			if (i < count) {
-				var src = item.media.m.replace("_m.jpg", ".jpg");
-				var li = $("<li/>").addClass(classes[i]).appendTo(element);
-				var a = $("<a/>").attr("href", item.link).addClass('thumbnail').appendTo(li);
-				$("<img/>").attr("src", src).attr("alt", '').appendTo(a);
+		var p = 0;
+		for (var i=0; i < matrice.length; i++) {
+			if (i % columns == 0) {
+				line = $("<div/>").addClass("row-fluid").appendTo(element);
 			}
-			i++;
-		});
+			var col = $("<div/>").addClass('span4').appendTo(line);
+			
+			for (var j=0; j < matrice[i]; j++) {
+				var clazz = 'big';
+				if (matrice[i] == 4) clazz = 'small';
+				var item = data.items[p];				
+			
+				if (item != undefined) {
+					var src = item.media.m.replace("_m.jpg", ".jpg");
+					var big = item.media.m.replace("_m.jpg", "_b.jpg");
+					
+					var a = $("<a/>").attr("href", big).attr("rel", "gallery1").attr("title", item.title).addClass('fancybox ' + clazz).appendTo(col);
+					var img = $("<img/>").attr("src", src).attr("alt", '').appendTo(a);
+				}
+				
+				p++;
+			}
+		}
 	});
 }
 
@@ -29,7 +52,7 @@ $.fn.development = function(columns) {
 	var element = $(this);
 	$.getJSON('development.json', function(data) {
 		var i = 0;
-		$.each(data.items, function(i, item){
+		$.each(data.items, function(j, item){
 			if (i % columns == 0) {
 				div = $("<div/>").addClass("row-fluid").appendTo(element);
 			}
@@ -57,4 +80,4 @@ $('#development').development(2);
 
 $('#about .span8').about();
 
-$('#photography .thumbnails').photography('7264550@N03', ['span4', 'span2', 'span2', 'span2', 'span2', 'span2', 'span2', 'span2', 'span2']);
+$('#photography').photography('7264550@N03', photo_matrix);

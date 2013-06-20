@@ -169,6 +169,7 @@ section {
 }
 
 #photography a.big {
+	width:294px;
 	height:190px;
 }
 
@@ -240,6 +241,7 @@ footer .nav li {
 	}
 
 	#photography a.big {
+		width:364px;
 		height:220px;
 	}
 }
@@ -255,6 +257,7 @@ footer .nav li {
 	}
 
 	#photography a.big {
+		width:222px;
 		height:140px;
 	}
 }

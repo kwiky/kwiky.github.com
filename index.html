@@ -6,8 +6,9 @@
 	<link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap-responsive.min.css" rel="stylesheet" />
 	<link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.0/css/font-awesome.css" rel="stylesheet" />
-	<link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.css" rel="stylesheet" />	
+	<link href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.css" rel="stylesheet" />
 	<link href="css/custom.css" rel="stylesheet" />
+	<link rel="profile" href="http://microformats.org/profile/hcard">
 </head>
 <body data-spy="scroll" data-target="header" data-offset="80">
 	<div class="background"></div>
@@ -21,6 +22,7 @@
 						  <li class="active"><a href="#about"><i class="icon-user"></i><span>&agrave; propos</span></a></li>
 						  <li><a href="#development"><i class="icon-laptop"></i><span>d&eacute;veloppement</span></a></li>
 						  <li><a href="#photography"><i class="icon-camera"></i><span>photographie</span></a></li>
+						  <li><a href="#contact"><i class="icon-envelope-alt"></i><span>contact</span></a></li>
 						</ul>
 					</div>
 				</div>
@@ -46,23 +48,44 @@
 			<section id="photography">		  
 				<h2><i class="icon-camera"></i> Photographie</h2>
 			</section>
+			
+			<section id="contact">		  
+				<h2><i class="icon-envelope-alt"></i> Contact</h2>
+				<address class="vcard">
+					<div class="n">
+						<span class="given-name">Steve</span>
+						<span class="family-name">Grosbois</span>
+					</div>
+					<div class="title">d&eacute;veloppeur web</div>
+					<ul class="unstyled">
+						<li><i class="icon-home"></i> <a class="url" href="http://www.steve-grosbois.com">steve-grosbois.com</a></li>
+						<li><i class="icon-envelope"></i> <a class="email" href="mailto:steve.grosbois@gmail.com">steve.grosbois@gmail.com</a></li>
+						<li><i class="icon-skype"></i> <a class="url" href="skype:steve.grosbois?call">steve.grosbois</a></li>
+						<li><i class="icon-phone"></i> <a class="tel" href="tel:+33682923572">06.82.92.35.72</a></li>
+					</ul>
+					<div class="adr">
+						<span class="locality">Angers</span>, <span class="country-name">France</span>
+					</div>
+				</address>
+			</section>
 		</div>
 		
 		<footer id="footer">
 			<div class="container navbar">
 				<p class="muted credit pull-left">Cr&eacute;dit <a href="http://www.steve-grosbois.com">Steve Grosbois</a> - <a href="https://github.com/kwiky/steve-grosbois/issues">D&eacute;clarer une anomalie</a> - <small>v0.5</small></p>
 				<ul class="nav pull-right">
-					<li><a href="mailto:steve.grosbois@gmail.com"><i class="icon-envelope icon-2x"></i></a></li>
-					<li><a href="skype:steve.grosbois?call"><i class="icon-skype icon-2x"></i></a></li>
-					<li><a href="http://facebook.com/steve.grosbois"><i class="icon-facebook icon-2x"></i></a></li>
-					<li><a href="http://twitter.com/kwiky"><i class="icon-twitter icon-2x"></i></a></li>
-					<li><a href="https://plus.google.com/u/0/104581329303403683534"><i class="icon-google-plus icon-2x"></i></a></li>					
-					<li><a href="http://github.com/kwiky"><i class="icon-github icon-2x"></i></a></li>				
-					<!--li><a href="https://bitbucket.org/kwiky"><i class="icon-bitbucket icon-2x"></i></a></li-->					
-					<li><a href="http://www.flickr.com/photos/stevegrosbois/"><i class="icon-flickr icon-2x"></i></a></li>
-					<!--li><a href="http://www.linkedin.com/profile/view?id=22185785"><i class="icon-linkedin icon-2x"></i></a></li-->					
-					<!--li><a href="http://instagram.com/kwiky"><i class="icon-instagram icon-2x"></i></a></li-->
-					<!--li><a href="https://fr.foursquare.com/lebigwood"><i class="icon-foursquare icon-2x"></i></a></li-->
+					<li><a class="url" href="tel:+33682923572"><i class="icon-phone icon-2x"></i></a></li>
+					<li><a class="url" href="mailto:steve.grosbois@gmail.com"><i class="icon-envelope icon-2x"></i></a></li>
+					<li><a class="url" href="skype:steve.grosbois?call"><i class="icon-skype icon-2x"></i></a></li>
+					<li><a class="url" href="http://facebook.com/steve.grosbois"><i class="icon-facebook icon-2x"></i></a></li>
+					<li><a class="url" href="http://twitter.com/kwiky"><i class="icon-twitter icon-2x"></i></a></li>
+					<li><a class="url" href="https://plus.google.com/u/0/104581329303403683534"><i class="icon-google-plus icon-2x"></i></a></li>					
+					<li><a class="url" href="http://github.com/kwiky"><i class="icon-github icon-2x"></i></a></li>				
+					<!--li><a class="url" href="https://bitbucket.org/kwiky"><i class="icon-bitbucket icon-2x"></i></a></li-->					
+					<li><a class="url" href="http://www.flickr.com/photos/stevegrosbois/"><i class="icon-flickr icon-2x"></i></a></li>
+					<!--li><a class="url" href="http://www.linkedin.com/profile/view?id=22185785"><i class="icon-linkedin icon-2x"></i></a></li-->					
+					<!--li><a class="url" href="http://instagram.com/kwiky"><i class="icon-instagram icon-2x"></i></a></li-->
+					<!--li><a class="url" href="https://fr.foursquare.com/lebigwood"><i class="icon-foursquare icon-2x"></i></a></li-->
 				</ul>
 			</div>
 		</footer>

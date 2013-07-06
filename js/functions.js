@@ -1,5 +1,5 @@
-var photo_matrix = [1, 4, 4, 
-    				1, 1, 1]
+var photo_matrix = [1, 4, 1, 
+    				1, 1, 4]
 					
 $(document).ready(function() {
 	$(".fancybox").fancybox({

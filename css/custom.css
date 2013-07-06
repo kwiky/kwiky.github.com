@@ -323,6 +323,7 @@ footer {
 	left:0;
 	right:0;
 	padding-top:10px;
+	z-index: 2;
 }
 
 footer .navbar {

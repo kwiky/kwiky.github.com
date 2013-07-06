@@ -226,6 +226,22 @@ section {
 	background-color:black;
 }
 
+#contact {
+	height:300px;
+}
+
+#map {
+	width: 920px;
+	height: 250px;
+	position: absolute;
+	z-index: 0;
+	
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
 .vcard {
 	width:300px;
 	/*border:#74b73f 1px solid;*/
@@ -233,9 +249,13 @@ section {
 	padding:20px;
 	background-color:white;
 	font-family: 'Raleway', serif;
-	font-weight: 200;
-	
+	font-weight: 200;	
 	cursor:default;
+
+	z-index: 1;
+	position:absolute;
+	margin-left:570px;
+	margin-top:30px;
 	
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
@@ -347,6 +367,16 @@ footer .nav li {
 		width:364px;
 		height:220px;
 	}
+
+	#map {
+		width: 1150px;
+		height: 250px;
+	}
+
+	.vcard {
+		margin-left:700px;
+		margin-top:30px;
+	}
 }
 
 /*******************************************************************
@@ -376,6 +406,16 @@ footer .nav li {
 	#photography a.big {
 		width:222px;
 		height:140px;
+	}
+
+	#map {
+		width: 704px;
+		height: 250px;
+	}
+
+	.vcard {
+		margin-left:350px;
+		margin-top:30px;
 	}
 }
 
@@ -450,6 +490,15 @@ footer .nav li {
 
 	#photography a.small:nth-child(even) {
 		margin-left: 0;
+	}
+
+	#map {
+		display:none;
+	}
+
+	.vcard {
+		position:relative;
+		margin:auto;
 	}
 	
 	footer {

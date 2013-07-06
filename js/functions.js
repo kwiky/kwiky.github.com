@@ -6,6 +6,20 @@ $(document).ready(function() {
 		openEffect	: 'none',
 		closeEffect	: 'none'
 	});
+
+	var map = L.map('map', {	
+		center: [47.475, -0.49],
+		zoom: 12,
+	    zoomControl: false,
+	    scrollWheelZoom: false,
+	    doubleClickZoom : false
+	});
+
+	L.tileLayer('http://c.tile.cloudmade.com/BC9A493B41014CAABB98F0471D759707/73072/256/{z}/{x}/{y}.png', {
+	    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+	}).addTo(map);
+
+	var popup = L.popup().setContent('test').openOn(map);
 });
 
 $('a[href^="#"]').click(function(){  

@@ -50,7 +50,7 @@ $.fn.photography = function(flickrId, matrice) {
 $.fn.development = function(columns) {
 	var size = 12 / columns;
 	var element = $(this);
-	$.getJSON('development.json', function(data) {
+	$.getJSON('skills.json', function(data) {
 		var i = 0;
 		$.each(data.items, function(j, item){
 			if (i % columns == 0) {

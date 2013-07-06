@@ -61,7 +61,7 @@ $.fn.photography = function(flickrId, matrice) {
 	});
 }
 
-$.fn.development = function(columns) {
+$.fn.skills = function(columns) {
 	var size = 12 / columns;
 	var element = $(this);
 	$.getJSON('skills.json', function(data) {
@@ -71,10 +71,18 @@ $.fn.development = function(columns) {
 				div = $("<div/>").addClass("row-fluid").appendTo(element);
 			}
 			var skill = $("<div/>").addClass('skill span' + size).appendTo(div);
+			var icons = $("<div/>").addClass("icons").appendTo(skill);
+			if (item.icons != undefined) {
+				$.each(item.icons, function(k, icon){
+					if (icon.type="font-awesome") {
+						var i = $("<i>").addClass(icon.name).appendTo(icons);
+					}
+				});
+			}
 			var h4  = $("<h4>").html(item.title).appendTo(skill);
 			var p   = $("<p>").html(item.text).appendTo(skill);
 			var note = $("<div>").addClass('note').appendTo(skill);
-			var progress = $("<div>").addClass("progress progress-success progress-striped active").appendTo(note);
+			var progress = $("<div>").addClass("progress progress-success progress-striped").appendTo(note);
 			var bar = $("<div>").addClass("bar").attr("style", "width:" + item.percent + "%").appendTo(progress);
 			var score = $("<div>").addClass('score').html(item.percent / 10).append("/10").appendTo(note);
 			i++;
@@ -90,7 +98,7 @@ $.fn.about = function() {
 	});
 }
 
-$('#development').development(2);
+$('#skills').skills(2);
 
 $('#about .span8').about();
 

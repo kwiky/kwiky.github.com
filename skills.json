@@ -1,5 +1,6 @@
 {"items":[
     {
+    	"icons": [{"type":"font-awesome", "name":"icon-html5"}, {"type":"font-awesome", "name":"icon-css3"}],
 		"title": "HTML/CSS/Javascript",
 		"text": "Avec plus de 10 ans d'expérience, j'ai su suivre et adopter les dernières tendances et technologies afin de créer des interfaces innovantes : HTML 5, CSS 3 et les derniers frameworks javascript.",
 		"percent":90

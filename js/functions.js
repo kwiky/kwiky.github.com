@@ -74,8 +74,11 @@ $.fn.skills = function(columns) {
 			var icons = $("<div/>").addClass("icons").appendTo(skill);
 			if (item.icons != undefined) {
 				$.each(item.icons, function(k, icon){
-					if (icon.type="font-awesome") {
-						var i = $("<i>").addClass(icon.name).appendTo(icons);
+					if (icon.type == "font-awesome") {
+						var i = $("<i>").addClass(icon.name).addClass("icon").appendTo(icons);
+					}
+					if (icon.type == "image") {
+						var i = $("<img>").attr("src", icon.name).addClass("icon").appendTo(icons);
 					}
 				});
 			}

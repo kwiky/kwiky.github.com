@@ -35,15 +35,5 @@
 		"title": "Outillage",
 		"text": "L'industrialisation des développements est aussi un aspect dont je suis familier. Les outils comme Eclipse, Maven, Jenkins, NPM, git, SVN et autre gestionnaires de version sont ceux que j'utilise quotidiennement.",
 		"percent":70
-	},
-	{
-		"title": "Gestion de projet",
-		"text": "[Texte sur la Méthodologie, la gestion et l'organisation]",
-		"percent":60
-	},
-	{
-		"title": "Autre",
-		"text": "Photoshop, NodeJS, etc...",
-		"percent":70
 	}
 ]}

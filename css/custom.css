@@ -131,8 +131,8 @@ section {
 }
 
 #skills .skill {
-	padding:0px 10px 50px 10px;
-	min-height:180px;
+	padding:0px 0px 50px 0px;
+	min-height:325px;
 	position: relative; 
 	background-color: rgb(256, 256, 256);
     background-color: rgba(256, 256, 256, 0.8);
@@ -190,10 +190,20 @@ section {
 	filter: none;
 }
 
+#skills .skill h4 {
+	background-color: #eee;
+	padding:2px 5px;
+}
+
+#skills .skill p {
+	padding:10px 10px;
+}
+
 #skills .skill .note {
 	bottom:0;
 	position: absolute; 
 	width:95%;
+	padding:0px 10px;
 }
 
 #skills .skill .score {
@@ -224,6 +234,8 @@ section {
 	padding:0;
 	overflow: hidden;
 	float:left;
+	text-align:center;
+	vertical-align: middle;
 }
 
 #photography a.small {

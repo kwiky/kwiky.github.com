@@ -52,7 +52,7 @@ $.fn.photography = function(flickrId, matrice) {
 					var big = item.media.m.replace("_m.jpg", "_b.jpg");
 					
 					var a = $("<a/>").attr("href", big).attr("rel", "gallery1").attr("title", item.title).addClass('fancybox ' + clazz).appendTo(col);
-					var img = $("<img/>").attr("src", src).attr("alt", '').appendTo(a);
+					var img = $("<img/>").attr("src", src).attr("alt", item.title).appendTo(a);
 				}
 				
 				p++;
@@ -71,6 +71,7 @@ $.fn.skills = function(columns) {
 				div = $("<div/>").addClass("row-fluid").appendTo(element);
 			}
 			var skill = $("<div/>").addClass('skill span' + size).appendTo(div);
+			var h4  = $("<h4>").html(item.title).appendTo(skill);
 			var icons = $("<div/>").addClass("icons").appendTo(skill);
 			if (item.icons != undefined) {
 				$.each(item.icons, function(k, icon){
@@ -82,7 +83,6 @@ $.fn.skills = function(columns) {
 					}
 				});
 			}
-			var h4  = $("<h4>").html(item.title).appendTo(skill);
 			var p   = $("<p>").html(item.text).appendTo(skill);
 			var note = $("<div>").addClass('note').appendTo(skill);
 			var progress = $("<div>").addClass("progress progress-success progress-striped").appendTo(note);

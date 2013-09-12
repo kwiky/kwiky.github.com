@@ -1,5 +1,6 @@
 var photo_matrix = [1, 4, 1, 
-    				1, 1, 4]
+    				1, 1, 4,
+    				4, 1, 1]
 					
 $(document).ready(function() {
 	$(".fancybox").fancybox({
@@ -32,13 +33,14 @@ $('a[href^="#"]').click(function(){
 
 $.fn.photography = function(flickrId, matrice) {  
 	var element = $(this);
+	var galery = $("<div/>").addClass("galery").appendTo(element);
 	var columns = 3;
 	var random = Math.floor((Math.random()*100)+1);
 	$.getJSON('http://api.flickr.com/services/feeds/photos_public.gne?id='+flickrId+'&tags=forwebsite&lang=fr-fr&format=json&jsoncallback=?&random=' + random, function(data){
 		var p = 0;
 		for (var i=0; i < matrice.length; i++) {
 			if (i % columns == 0) {
-				line = $("<div/>").addClass("row-fluid").appendTo(element);
+				line = $("<div/>").addClass("row-fluid").appendTo(galery);
 			}
 			var col = $("<div/>").addClass('span4').appendTo(line);
 			
@@ -64,11 +66,12 @@ $.fn.photography = function(flickrId, matrice) {
 $.fn.skills = function(columns) {
 	var size = 12 / columns;
 	var element = $(this);
+	var galery = $("<div/>").addClass("galery").appendTo(element);
 	$.getJSON('skills.json', function(data) {
 		var i = 0;
 		$.each(data.items, function(j, item){
 			if (i % columns == 0) {
-				div = $("<div/>").addClass("row-fluid").appendTo(element);
+				div = $("<div/>").addClass("row-fluid").appendTo(galery);
 			}
 			var skill = $("<div/>").addClass('skill span' + size).appendTo(div);
 			var h4  = $("<h4>").html(item.title).appendTo(skill);
@@ -76,18 +79,15 @@ $.fn.skills = function(columns) {
 			if (item.icons != undefined) {
 				$.each(item.icons, function(k, icon){
 					if (icon.type == "font-awesome") {
-						var i = $("<i>").addClass(icon.name).addClass("icon").appendTo(icons);
+						var i = $("<i>").addClass(icon.name).addClass("icon icon-"+k).appendTo(icons);
 					}
 					if (icon.type == "image") {
-						var i = $("<img>").attr("src", icon.name).addClass("icon").appendTo(icons);
+						var i = $("<img>").attr("src", icon.name).addClass("icon icon-"+k).appendTo(icons);
 					}
 				});
 			}
 			var p   = $("<p>").html(item.text).appendTo(skill);
-			var note = $("<div>").addClass('note').appendTo(skill);
-			var progress = $("<div>").addClass("progress progress-success progress-striped").appendTo(note);
-			var bar = $("<div>").addClass("bar").attr("style", "width:" + item.percent + "%").appendTo(progress);
-			var score = $("<div>").addClass('score').html(item.percent / 10).append("/10").appendTo(note);
+			var note = $("<div>").addClass('note').html(item.percent / 10).append("/10").appendTo(skill);
 			i++;
 		});
 	});

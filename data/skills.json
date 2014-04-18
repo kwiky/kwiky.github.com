@@ -1,0 +1,39 @@
+{"items":[
+    {
+    	"icons": [{"type":"image", "name":"img/html5.png"}, {"type":"image", "name":"img/css3.png"}, {"type":"image", "name":"img/jquery.png"}],
+		"title": "HTML/CSS/Javascript",
+		"text": "Avec plus de 10 ans d'expérience, j'ai su suivre et adopter les dernières tendances et technologies afin de créer des interfaces innovantes : HTML 5, CSS 3 et les derniers frameworks javascript.",
+		"percent":90
+	},
+	{
+		
+		"icons": [{"type":"image", "name":"img/php.png"}, {"type":"image", "name":"img/zend.png"}, {"type":"image", "name":"img/cakephp.png"}, {"type":"image", "name":"img/symfony.png"}],
+		"title": "PHP",
+		"text": "Ayant travaillé sur des dizaines de projets pour de grands comptes, j'ai pu construire une expérience solide sur les principaux frameworks PHP comme ZendFramework, CakePHP, Symfony ou des CMS comme Wordpress et Drupal.",
+		"percent":90
+	},
+	{
+		"icons": [{"type":"image", "name":"img/java.png"}, {"type":"image", "name":"img/spring.png"}, {"type":"image", "name":"img/struts.png"}, {"type":"image", "name":"img/hibernate.png"}],
+		"title": "Java",
+		"text": "Les différents projets sur lesquels j'ai pu collaborer m'ont permis d'étendre mes connaissances autour des derniers frameworks Java/J2EE comme Struts, Spring, Hibernate, etc...",
+		"percent":80
+	},
+	{
+		"icons": [{"type":"image", "name":"img/mysql.png"}, {"type":"image", "name":"img/oracle.png"}, {"type":"image", "name":"img/mongodb.png"}],
+		"title": "Base de données",
+		"text": "Toutes les applications sur lesquelles j'ai été amené à travailler nécessitaient le stockage et la structuration des données. Mes années d'expériences me permettent aujourd'hui d'administrer et utiliser les principaux systèmes de bases de données relationnelles et non relationnelles comme MySQL, Oracle, MongoDB, etc...",
+		"percent":80
+	},
+	{
+		"icons": [{"type":"image", "name":"img/android.png"}],
+		"title": "Mobile",
+		"text": "Sensible à l'ergonomie comme au design, je prend un soin particulier à l'accessibilité des sites internets sur les nouveaux supports comme les tablettes et smartphones. Je possède aussi une certaine expérience dans le développement d'application pour Android.",
+		"percent":80
+	},
+	{
+		"icons": [{"type":"image", "name":"img/maven.png"}, {"type":"image", "name":"img/jenkins.png"}, {"type":"image", "name":"img/git.png"}],
+		"title": "Outillage",
+		"text": "L'industrialisation des développements est aussi un aspect dont je suis familier. Les outils comme Eclipse, Maven, Jenkins, NPM, git, SVN et autre gestionnaires de version sont ceux que j'utilise quotidiennement.",
+		"percent":70
+	}
+]}

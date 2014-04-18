@@ -126,12 +126,16 @@ section {
 	padding-right:30px;
 }
 
-#about .span4 {
+#about .col-lg-4 {
 	text-align: center;
 	padding:0px 20px;
 }
 
-#about .span8 {
+#about img {
+	max-width:100%;
+}
+
+#about .col-lg-8 {
 	padding:30px 0px;
 }
 
@@ -448,7 +452,7 @@ footer .nav li {
 		line-height: 50px;
 	}
 
-	#about .span8 {
+	#about .col-lg-8 {
 		padding:40px 0px;
 	}
 
@@ -548,7 +552,7 @@ footer .nav li {
 		padding:2px;
 	}
 	
-	header>.container>.row-fluid>h1.span4 {
+	header>.container>.row-fluid>h1.col-lg-4 {
 		display:none;
 	}
 	
@@ -573,7 +577,7 @@ footer .nav li {
 		margin-bottom:10px;
 	}
 
-	#about .span8 {
+	#about .col-lg-8 {
 		padding:20px 0px;
 	}
 

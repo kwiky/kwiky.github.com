@@ -29,7 +29,7 @@ h2 {
 header a:hover, header a:focus, footer a:hover, footer a:focus, .navbar .nav>li>a {
 	color:#629937;
 	text-decoration:none;
-	padding:inherit;
+	/*padding:inherit;*/
 }
 
 h1 {

@@ -5,6 +5,9 @@ var app = angular.module('frontApp', [
 ]).
 config(function($routeProvider) {
   $routeProvider
-  	.when('/', {templateUrl: 'partials/index.html', controller: 'HomeCtrl'})
-	.otherwise({redirectTo: '/'});
+  	.when('/about', {templateUrl: 'partials/about.html', controller: 'HomeCtrl'})
+  	.when('/skills', {templateUrl: 'partials/skills.html'})
+  	.when('/photography', {templateUrl: 'partials/photography.html'})
+  	.when('/contact', {templateUrl: 'partials/contact.html'})
+	.otherwise({redirectTo: '/about'});
 });

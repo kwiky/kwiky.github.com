@@ -3,21 +3,28 @@
 
 body {
     font-family: 'Arimo', sans-serif;
+	color:#fff;
+	background-color:black;
 }
+
 
 .background {
 	z-index:-100;
-	background:url('../img/8995986772_d81c6ac03a_k_30.jpg') center center no-repeat;
+	background:url('../img/bg1.jpg') center center no-repeat;
 	background-attachment: fixed;
 	position: fixed;
 	width:100%;
 	height:100%;
 	top:0;
 	left:0;
+	animation-duration:2s;
+	-webkit-animation-duration:2s;
+	-moz-animation-duration:2s;
 }
 
 h1, a, #skills .skill:hover .icons {
-	color:#74b73f;
+	/*color:#74b73f;*/
+	color:#fff;
 }
 
 h2 {
@@ -27,7 +34,7 @@ h2 {
 }
 
 header a:hover, header a:focus, footer a:hover, footer a:focus, .navbar .nav>li>a {
-	color:#629937;
+	color:#fff;
 	text-decoration:none;
 	/*padding:inherit;*/
 }
@@ -36,17 +43,19 @@ h1 {
 	text-transform:lowercase;
 	font-size:30px;
 	font-weight:normal;
-	line-height:10px;
+	line-height:30px;
 	margin:10px 0px 0px 0px;
 }
 
 header, footer {
 	position: fixed;
-	background:white;
-	-webkit-box-shadow: 0px 0px 10px 0px #333;
+	background:url('../img/opacity-20.png');
+	/*background-color: rgb(0, 0, 0);
+	background-color: rgb(0, 0, 0, 0.2);*/
+	-webkit-box-shadow: 0px 0px 40px 0px #333;
 	-moz-box-shadow: 0px 0px 10px 0px #333;
 	-o-box-shadow: 0px 0px 10px 0px #333;
-	box-shadow: 0px 0px 10px 0px #333;
+	box-shadow: 0px 0px 4px 0px #333;
 }
 
 header {
@@ -79,46 +88,82 @@ header li span {
 }
 
 header li.active, header li:hover {
-	border-bottom: 3px solid #74b73f;
+	border-bottom: 3px solid #fff;
 }
 
 header li:hover {
-	border-bottom-color: #629937;
+	border-bottom-color: #fff;
 }
 
-#navAbout {
+.animated.delay03 {
 	animation-delay:0.3s;
 	-webkit-animation-delay:0.3s;
 	-moz-animation-delay:0.3s;
 }
 
-#navSkills {
+.animated.delay04 {
+	animation-delay:0.4s;
+	-webkit-animation-delay:0.4s;
+	-moz-animation-delay:0.4s;
+}
+
+.animated.delay05 {
+	animation-delay:0.5s;
+	-webkit-animation-delay:0.5s;
+	-moz-animation-delay:0.5s;
+}
+
+.animated.delay06 {
 	animation-delay:0.6s;
 	-webkit-animation-delay:0.6s;
 	-moz-animation-delay:0.6s;
 }
 
-#navPhotography {
+.animated.delay07 {
+	animation-delay:0.7s;
+	-webkit-animation-delay:0.7s;
+	-moz-animation-delay:0.7s;
+}
+
+.animated.delay08 {
+	animation-delay:0.8s;
+	-webkit-animation-delay:0.8s;
+	-moz-animation-delay:0.8s;
+}
+
+.animated.delay09 {
 	animation-delay:0.9s;
 	-webkit-animation-delay:0.9s;
 	-moz-animation-delay:0.9s;
 }
 
-#navContact {
+.animated.delay10 {
+	animation-delay:1.0s;
+	-webkit-animation-delay:1.0s;
+	-moz-animation-delay:1.0s;
+}
+
+.animated.delay11 {
+	animation-delay:1.1s;
+	-webkit-animation-delay:1.1s;
+	-moz-animation-delay:1.1s;
+}
+
+.animated.delay12 {
 	animation-delay:1.2s;
 	-webkit-animation-delay:1.2s;
 	-moz-animation-delay:1.2s;
 }
 
 .content {
-	background-color: rgb(256, 256, 256);
-    background-color: rgba(256, 256, 256, 0.8);
+	/*background-color: rgb(256, 256, 256);
+    background-color: rgba(256, 256, 256, 0.8);*/
 	padding:0px;
-	color:#000;
-	-webkit-box-shadow: 0px 0px 10px 0px #888;
+	/*color:#000;*/
+	/*-webkit-box-shadow: 0px 0px 10px 0px #888;
 	-moz-box-shadow: 0px 0px 10px 0px #888;
 	-o-box-shadow: 0px 0px 10px 0px #888;
-	box-shadow: 0px 0px 10px 0px #888;
+	box-shadow: 0px 0px 10px 0px #888;*/
 }
 
 section {
@@ -132,28 +177,23 @@ section {
 #about {
 	font-family: 'Raleway', serif;
 	font-weight: 200;
-	background-color: rgb(116, 183, 63);
-	background-color: rgb(116, 183, 63, 0.8);
+	/*background-color: rgb(116, 183, 63);
+	background-color: rgb(116, 183, 63, 0.8);*/
 	padding:80px 10px 20px 10px;
+	/*text-shadow: 0 0 3px #000;*/
 }
 
 #about h2 {
 	font-size: 40px;
 	color:#fff;
 	padding:0px;
-	animation-delay:0.3s;
-	-webkit-animation-delay:0.3s;
-	-moz-animation-delay:0.3s;
 }
 
 #about p {
 	font-size: 30px;
 	line-height: 40px;
-	color:#c2e7ae;
+	/*color:#c2e7ae;*/
 	padding-right:30px;
-	animation-delay:0.5s;
-	-webkit-animation-delay:0.5s;
-	-moz-animation-delay:0.5s;
 }
 
 #about .col-lg-4 {
@@ -178,7 +218,7 @@ section {
 }
 
 #skills {
-	background-color: #d7584b;
+	/*background-color: #d7584b;*/
 }
 
 #skills .row-fluid {
@@ -281,7 +321,7 @@ section {
 }
 
 #photography {
-	background-color: #000;
+	/*background-color: #000;*/
 }
 
 #photography .row-fluid {
@@ -353,8 +393,8 @@ section {
 
 #contact {
 	height:300px;
-	background-color: rgb(116, 183, 63);
-	background-color: rgb(116, 183, 63, 0.8);
+	/*background-color: rgb(116, 183, 63);
+	background-color: rgb(116, 183, 63, 0.8);*/
 	padding-bottom:140px;
 }
 
@@ -445,6 +485,10 @@ section {
 	text-align: right;
 }
 
+.muted, .muted a {
+	color:#888;
+}
+
 footer {
 	bottom: 0;
 	left:0;
@@ -473,13 +517,13 @@ footer .nav li {
 @media (min-width: 1200px) {
 
 	#about h2 {
-		font-size: 54px;
-		margin-bottom: 20px;
+		font-size: 120px;
+		margin-bottom: 30px;
 	}
 
 	#about p {
-		font-size: 40px;
-		line-height: 50px;
+		font-size: 60px;
+		line-height: 60px;
 	}
 
 	#about .col-lg-8 {

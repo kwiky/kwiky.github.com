@@ -1,0 +1,4 @@
+<section class="marketing" id="about">
+	<h2 class="animated fadeInLeft delay03">{{about.title}}</h2>
+	<p ng-repeat="txt in about.text" ng-bind-html="txt" class="lead animated fadeInLeft delay0{{3 + ($index + 1) * 3}}"></p>
+</section>

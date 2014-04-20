@@ -1,4 +1,4 @@
-{"items":[
+[
     {
     	"icons": [{"type":"image", "name":"img/html5.png"}, {"type":"image", "name":"img/css3.png"}, {"type":"image", "name":"img/jquery.png"}],
 		"title": "HTML/CSS/Javascript",
@@ -36,4 +36,4 @@
 		"text": "L'industrialisation des développements est aussi un aspect dont je suis familier. Les outils comme Eclipse, Maven, Jenkins, NPM, git, SVN et autre gestionnaires de version sont ceux que j'utilise quotidiennement.",
 		"percent":70
 	}
-]}
+]

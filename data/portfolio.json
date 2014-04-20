@@ -1,0 +1,16 @@
+[
+	{
+		"id": "mainelabs",
+		"name": "Mainelabs",
+		"url": "http://www.mainelabs.fr/",
+		"date": "2014",
+		"text": [
+			"Mainelabs is a IT local network in Angers, France"
+		],
+		"technos": ["php", "html5", "css3", "jquery", "mongodb"],
+		"pics": [
+			"/img/portfolio/mainelabs-logo.jpg",
+			"/img/portfolio/mainelabs-front.jpg"
+		]
+	}
+]
